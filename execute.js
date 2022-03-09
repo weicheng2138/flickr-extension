@@ -40,9 +40,9 @@ const getLargestImg = (className) => {
     return toReturn;
 };
 
-const downloadImg = (url) => {
-    var a = $("<a>").attr("href", url);
-    a[0].click();
+const downloadImg = async (url) => {
+    var a = await $("<a>").attr("href", url).attr("download", "");
+    await a[0].click();
 };
 
 const onMessage = (message) => {
