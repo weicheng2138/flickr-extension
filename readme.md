@@ -1,6 +1,6 @@
 # Flickr Extension
 
-Helps you download high quality images from Flickr.
+Helps you download the highest quality images from Flickr.
 
 ## Installation
 
