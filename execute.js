@@ -41,7 +41,10 @@ const getLargestImg = (className) => {
 };
 
 const downloadImg = async (url) => {
-    var a = await $("<a>").attr("href", url).attr("download", "");
+    var a = await $("<a>")
+        .attr("href", url)
+        .attr("download", "")
+        .attr("target", "_blank");
     await a[0].click();
 };
 
